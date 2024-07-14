@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Red Hat Display",
+    sans-serif;
+    min-height: 100vh;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:hsl(225, 100%, 94%);
+    position: relative;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.text-element{
+    padding: 8%;
+}
+.title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom:20px;
+}
+.subtitle{
+    margin-bottom: 20px;
+}
+.text-content p.subtitle{
+    color:rgb(127, 130, 128)
+}
+.plan-item{
+    background-color:hsl(225, 100%, 98%) ;
+    border-radius: 12px;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+.plan-item-left{
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+.plan-item-left div{
+    margin-left: 20px;
+}
+.plan-item-left div h5{
+    font-weight: 900;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+}
+.plan-item-left div p{
+    font-weight: 900;
+    font-size: 15px;
+    color: rgb(127, 130, 128);
+}
+.plan-item a{
+    font-weight: 900;
+    color:  hsl(223, 47%, 23%);
+}
+.plan-item a:hover{
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+    transition: color .3s ease;
+}
+.anchor{
+    text-align: center;
+}
+.proceed-btn a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 20px 0;
+    border-radius: 12px;
+    margin: 30px 0;
+}
+.proceed-btn a:hover{
+    background-color: hsl(224, 23%, 55%);
+    transition: background-color 0.3s ease;
+}
+.cancel-btn a{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 900;
+}
+.cancel-btn a:hover{
+    color: hsl(223, 47%, 23%);
+}
+@media only screen and (max-width:425px)
+{
+    body{
+        background-image: url(../images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+    .container{
+        max-width: 85%;
+    }  
+    .title{
+        font-size: 16px;
+    } 
+    div.plan-item{
+        padding: 15px;
+        
+    }
+    .plan-item a{
+        margin-left: 25px;
+    }
+    .plan-item-left div{
+        margin-left: 2px;
+        /* margin-right: 10px; */
+    }
+    .plan-item-left .text h5{
+        font-size: 12px;
+    }
+    .plan-item-left .text p{
+        font-size: 12px;
+    }
+    .plan-item-left img{
+        width: 40px;
+        height: 40px;
+    }
+}
